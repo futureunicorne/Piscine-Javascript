@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+	<html lang="fr">
+		<head>
+			<title> Simulation Ressources Annuelles </title>
+			<meta charse="UTF-8">
+			<script type="text/javascript" src="ex05.js"></script>
+			<link rel="stylesheet" type="text/css" href="ex05.css">
+		</head>
+		<body onload="base()">
+			<header>
+				<h1> Simulateur de Ressources en Ligne </h1>
+				<img src="gouv.jpg" id="gouv">
+			</header>
+			<div id="exp">
+				<p>
+					Bienvenue sur le site de calcul de vos revenues annuelles !
+					Pour effectuer votre simulation, merci de renseigner les champs
+					ci dessous et de cliquer "Valider" pour lancer le processus !
+				</p><br/><br/>
+			</div>
+			<div id="saisie" class="">
+				<form id="info" onsubmit="return false">
+					Votre salaire brut : <input type="text" id="salary"> euros <br/>
+					Avez vous un Bonus : <input type="checkbox" id='bonusDeux'><br/>
+					Allocation		   : <input type="checkbox" id="alloc"><br/>
+					Maladie			   : <input type="checkbox" id="sick"><br/>
+
+					Homme ou Femme	   : <select id="genre">
+										 <option value="M"> Homme </option>
+										 <option value="F"> Femme </option>
+									 </select><br/>
+					Personne a Charge  : <input type="text" id="charge"><br/>
+					<input type="submit" value="Valider" onclick="compileSalary()">
+					<input type="reset" value="reinit" onclick="resetAll()"><br/>
+				</form>
+			</div>
+			<div id="calcule" class="">
+				<p> Votre impot sera d'un montant de :  <span id="impotResult"> </span></p>
+				<p> Votre assurance employe sera de  	   : <span id="assuranceResult"> </span></p>
+				<p> Le regime de pension Canadien sera de  : <span id="canadaResult"></span></p>
+				<p> Votre supplement sera de     		   : <span id="bonusResult"></span></p>
+				<p> Votre salaire net sera de  			   : <span id="resultat"> </span></p>
+				<p> Salaire majoree du bonus maladie 	   : <span id="sickResult"> </span></p>
+			</div>
+			<footer id="centrage">
+				<a href="http://www.impots.gouv.fr" style="padding-right: 1vh;"> Site Officiel </a>
+				<a href="www.page.fr"> Nous contacter </a>
+				<div id="line">
+				</div>
+			</footer>
+		</body>
+	</html>

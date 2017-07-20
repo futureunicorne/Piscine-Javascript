@@ -1,0 +1,63 @@
+ body{
+ }
+ header {
+	 background-color: rgb(207, 207, 207);
+	 width : 140W;
+ }
+
+ #exp {
+	 margin-top: 3vh;
+	 margin-left: auto;
+	 margin-right: auto;
+	 text-align: center;
+	 width: 25vw;
+ }
+
+ h1 {
+	 color: white;
+	 position: absolute;
+	 text-align: center ;
+	 margin-left: 42vw;
+	 margin-top: 7.2vh;
+	 padding-bottom: 45vh;
+ }
+ #gouv {
+	 margin-top: 0.7vh;
+ }
+
+ #saisie {
+	display: inline-block;
+	position: fixed;
+	margin-top: 2vh;
+	left: 24%;
+	width: 25vw;
+	height: 20vw;
+	border: 0.5vh solid red;
+ }
+
+ #calcule {
+	 display: inline-block;
+	 position: absolute;
+	 margin-top: 2vh;
+	 left: 52%;
+	 width: 25vw;
+	 height: 20vw;
+	 border: 0.5vh solid grey;
+}
+ #centrage {
+	 text-align: center;
+	 margin-top: 55vh;
+ }
+
+ #centrage a {
+	 text-decoration: none;
+	 color : green;
+ }
+
+ #line {
+	 border-bottom: 0.2vh solid black;
+	 width: 8vw;
+	 margin-top: 1vh;
+	 margin-left: 46%;
+
+ }
